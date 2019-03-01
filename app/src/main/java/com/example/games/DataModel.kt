@@ -157,14 +157,29 @@ class JugadorAutomatic(tablero: Tablero) {
                 celdas[it[0]][it[1]]?.estadoCelda = jugador
 
                 if (jugador == miFicha){
-                    calificacionActual = minimax(profundidad - 1, contrario)[0]
+                    /*
+                    *
+                    * Completa el código:
+                    *
+                    * Agrega el llamado recursivo de minimax y obtén la calificación Actual
+
+                    * */
+                    calificacionActual = 0
                     if(calificacionActual > mejorCalificacion) {
                         mejorCalificacion = calificacionActual
                         mejorRenglon = it[0]
                         mejorColumna = it[1]
                     }
                 } else {
-                    calificacionActual = minimax(profundidad - 1, miFicha)[0]
+
+                    /*
+                    *
+                    * Completa el código:
+                    *
+                    * Agrega el llamado recursivo de minimax y obtén la calificación Actual
+
+                    * */
+                    calificacionActual = 0
                     if(calificacionActual < mejorCalificacion) {
                         mejorCalificacion = calificacionActual
                         mejorRenglon = it[0]
