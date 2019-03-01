@@ -138,10 +138,4 @@ class GatoActivity : AppCompatActivity() {
     fun move(){
 
     }
-
-
-
-
-
-
 }
